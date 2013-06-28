@@ -30,4 +30,5 @@ haskell-updater
 emerge -c
 
 # check & fix links
-revdep-rebuild
+revdep-rebuild -i
+# you can use argument "-i" to ignore old temp files

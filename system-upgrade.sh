@@ -4,6 +4,10 @@
 #     and should never be executed
 exit
 
+# TODO: maybe I should rewrite things here
+# to some more friendly format
+# so it can be used by others as well..
+
 # update meta info
 emerge-webrsync
 # an alternative way:
@@ -25,6 +29,12 @@ dispatch-conf
 python-updater
 perl-cleaner --all
 haskell-updater
+emerge @ocaml-rebuild
+
+# seems `portage` now is smarter to figure out
+#   which lib are needed to be preserved,
+#   `revdep-rebuild` will have less work to do then.
+emerge @preserved-rebuild
 
 # clean out unused softwares
 emerge -c

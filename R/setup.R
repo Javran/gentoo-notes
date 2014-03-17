@@ -1,5 +1,6 @@
 # source code for fetching bioconductor libs
 
+# also use the following line to include libs from bioconductor.
 source("http://bioconductor.org/biocLite.R")
 
 getPackageIfNeeded <- function(pkg) {

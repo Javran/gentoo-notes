@@ -42,3 +42,8 @@ emerge -c
 # check & fix links
 revdep-rebuild -i
 # you can use argument "-i" to ignore old temp files
+
+# occasionally:
+# https://www.gentoo.org/proj/en/portage/doc/common-problems.xml
+emerge --regen
+# still not sure if this works though

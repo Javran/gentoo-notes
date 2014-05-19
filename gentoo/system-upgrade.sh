@@ -47,3 +47,6 @@ revdep-rebuild -i
 # https://www.gentoo.org/proj/en/portage/doc/common-problems.xml
 emerge --regen
 # still not sure if this works though
+
+# see also: http://wiki.gentoo.org/wiki/Eclean
+eclean distfiles

@@ -50,3 +50,9 @@ emerge --regen
 
 # see also: http://wiki.gentoo.org/wiki/Eclean
 eclean distfiles
+
+# When gcc has a major update
+# see also: https://wiki.gentoo.org/wiki/Upgrading_GCC
+gcc-config -l
+env-update && source /etc/profile
+emerge --oneshot libtool

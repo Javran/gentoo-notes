@@ -56,3 +56,9 @@ eclean distfiles
 gcc-config -l
 env-update && source /etc/profile
 emerge --oneshot libtool
+
+# if connecting vpn results in an immediate error,
+# check if there is something like:
+# Plugin /usr/lib64/pppd/2.4.5/nm-pptp-pppd-plugin.so is for pppd version 2.4.6, this is 2.4.7
+# appears in the /var/log/messages
+# if it does, reinstall net-misc/networkmanager-pptp

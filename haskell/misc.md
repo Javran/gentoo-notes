@@ -7,7 +7,7 @@
 See [Package versioning policy](http://www.haskell.org/haskellwiki/Package_versioning_policy)
 for detail.
 
-# Profiling
+# Profiling (GHC document 7.16.4)
 
 Error message would be like:
 

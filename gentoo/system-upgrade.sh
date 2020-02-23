@@ -25,12 +25,6 @@ emerge -avuDNt world
 # update configurations, if any
 dispatch-conf
 
-# update packages that rely on python/perl/haskell ...
-python-updater
-perl-cleaner --all
-haskell-updater
-emerge @ocaml-rebuild
-
 # seems `portage` now is smarter to figure out
 #   which lib are needed to be preserved,
 #   `revdep-rebuild` will have less work to do then.
